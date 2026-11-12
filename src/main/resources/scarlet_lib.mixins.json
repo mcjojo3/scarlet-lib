@@ -1,0 +1,48 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "mc.sayda.scarlet_lib.mixin",
+  "plugin": "mc.sayda.scarlet_lib.mixin.ScarletMixinPlugin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "damage.ArrowEntityMixin",
+    "damage.CactusBlockMixin",
+    "damage.ExplosionMixin",
+    "damage.FireballEntityMixin",
+    "damage.ThrownEntityMixin",
+    "EntityAccessor",
+    "EntityInvoker",
+    "EntityMixin",
+    "EyeLevelItemsMixin",
+    "LivingEntityMixin",
+    "MobEntityMixin",
+    "PistonBlockMixin",
+    "PlayerEntityMixin",
+    "PlayerInventoryMixin"
+  ],
+  "server": [
+    "server.PlayerManagerMixin",
+    "server.ServerCommandHandlerMixin",
+    "server.ServerPlayNetworkHandlerMixin",
+    "server.ServerPlayerEntityMixin"
+  ],
+  "client": [
+    "client.BlockEntityRenderDispatcherMixin",
+    "client.ClientNetworkHandlerMixin",
+    "client.ClientPlayerChatMixin",
+    "client.ClientPlayerEntityMixin",
+    "client.EffectsRendererMixin",
+    "client.EntityRenderDispatcherMixin",
+    "client.EntityRendererMixin",
+    "client.GameRendererMixin",
+    "client.InventoryScreenMixin",
+    "client.OtherPlayerEntityMixin",
+    "client.PlayerEntityClientMixin",
+    "client.PlayerEntityRendererMixin",
+    "client.SingleplayerChatMixin",
+    "client.WorldRegionMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

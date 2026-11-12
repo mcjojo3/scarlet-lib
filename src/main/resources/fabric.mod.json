@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "scarlet_lib",
+  "version": "0.1.0+b1.7.3",
+
+  "name": "Scarlet Lib",
+  "description": "Modern vanilla mechanics for beta 1.7.3: status effects with amplifiers, attributes (including scale), damage types and per-entity data, as an API other mods can build on.",
+  "authors": [
+    "mc_jojo3"
+  ],
+  "contact": {},
+
+  "license": "All Rights Reserved",
+  "icon": "assets/scarlet_lib/logo.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mc.sayda.scarlet_lib.ScarletLibMain"
+    ],
+    "stationapi:event_bus": [
+      "mc.sayda.scarlet_lib.ScarletLib"
+    ],
+    "stationapi:event_bus_client": [
+      "mc.sayda.scarlet_lib.client.ScarletLibClient"
+    ]
+  },
+  "mixins": [
+    "scarlet_lib.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3",
+    "stationapi": "*"
+  },
+  "suggests": {
+    "retrocommands": "*"
+  }
+}

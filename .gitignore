@@ -1,0 +1,33 @@
+# Allow-list: only what is needed to build and run the mod is tracked (Gradle build, wrapper,
+# sources and resources, license, readme). Everything else stays local: IDE settings, build
+# output, run folders, logs, test worlds, gametests, notes and tool folders.
+
+/*
+!/.gitignore
+!/LICENSE
+!/README.md
+!/build.gradle.kts
+!/settings.gradle.kts
+!/gradle.properties
+!/gradlew
+!/gradlew.bat
+
+# Gradle wrapper only
+!/gradle/
+/gradle/*
+!/gradle/wrapper/
+
+# Main source set only (no test or gametest sets)
+!/src/
+/src/*
+!/src/main/
+
+# Stray files inside the tracked folders
+.DS_Store
+Thumbs.db
+desktop.ini
+*.bak
+*.orig
+*.tmp
+*.swp
+*.log
